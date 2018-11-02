@@ -1,6 +1,7 @@
 function findLongestWordLength(str) {
   var str = str;
-  //patt1 /\w=ein zeichen += ein oder mehrere von dem zeichen \s = whitespace tabs etc.. /g = global i = ignorecase...... bei diesem patt1 haben wir ein problem das er das letzte wort nicht mitnimmt deswegen erstellten wir patt2
+  //patt1 /\w=ein zeichen += ein oder mehrere von dem zeichen \s = whitespace tabs etc.. /g = global i = ignorecase...... 
+  //bei diesem patt1 haben wir ein problem das er das letzte wort nicht mitnimmt deswegen erstellten wir patt2
   var patt1 = /\w+\s/gi;
 //------------------------------------------------------------------
   //patt2 gibt mir das letzte wort vom satz zurück
