@@ -10,7 +10,6 @@ function largestOfFour(arr) {
       alo.push(data)
    })
  }
- //danke math.max und ES6(spread-operator) für die einfachere version :)
  console.log(Math.max(...alo))
 }
 
