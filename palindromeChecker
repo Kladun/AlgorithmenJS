@@ -1,0 +1,18 @@
+function palindrome(str) {
+  let strArr = Array.from(str);
+  let strRev = strArr.reverse();
+  let removAll = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  let removeSec = strRev.join("").replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+  console.log(strRev.join("").replace(/[^A-Za-z0-9]/g, '').toLowerCase())
+  if(removAll === removeSec){
+    return true;
+  }else{
+    return false;
+  }
+
+
+}
+
+
+
+palindrome("Eye");
