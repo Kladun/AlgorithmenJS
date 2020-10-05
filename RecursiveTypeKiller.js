@@ -1,11 +1,11 @@
   function nestedTypeKiller(data){
     if(Array.isArray(data)){
       for(let i = 0; i < data.length; i++){
-        excluderKiller(data[i]);
+        nestedTypeKiller(data[i]);
       }
     }else if(typeof data == "object"){
       for(let key in data){
-        excluderKiller(data[key]);
+        nestedTypeKiller(data[key]);
       }
     }else{
       let convertType = Number(data);
